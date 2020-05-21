@@ -1,0 +1,112 @@
+
+*{
+    user-select: none;
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+#grid{
+    /* margin-top: 30px; */
+    margin: auto;
+    font-size: 0px;
+    padding-top: 20px;
+}
+
+.cell{
+    display: inline-block;
+    background: rgba(0, 0, 0, 0.2);
+    margin: .5px;
+    cursor: pointer;
+}
+
+.dark{
+    background: #222;
+}
+
+
+/*    screen modes    */
+
+/* mode 1 */
+.first#grid{ width: 1000px }
+.first .cell{ width: 19px; height: 19px }
+
+/* mode 2 */
+.second#grid{ width: 1200px }
+.second .cell{ width: 23px; height: 23px }
+
+/* mode 3 */
+.third#grid{ width: 600px }
+.third .cell{ width: 24px; height: 24px }
+.third #screen-size, .third #moves-counter, .third #timer{
+    align-content: center !important;
+    display: grid !important;
+}
+.third .bottom-buttons i{ font-size: 50px}
+.third .top-buttons i{ font-size: 45px }
+.third .bottom-buttons button{
+    padding: 40px 0 !important;
+    line-height: 13px;
+    /* height: 8px; */
+}
+
+/* mode 4 */
+.fourth#grid{ width: 1000px }
+.fourth .cell{ width: 9px; height: 9px }
+
+/*    end screen modes    */
+
+.red-cell{background: red}
+.blue-cell{background: rgb(41, 41, 235)}
+.green-cell{background: rgb(13, 184, 13)}
+
+.magenta-cell{background: magenta}
+.yellow-cell{background: rgb(255, 255, 1)}
+.maroon-cell{background: maroon}
+.teal-cell{background: teal}
+.navy-cell{background: navy}
+.fuchsia-cell{background: fuchsia}
+.gray-cell{background: gray}
+.aqua-cell{background: aqua}
+.olive-cell{background: olive}
+
+.bottom-buttons{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.top-buttons{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.top-buttons i{
+    font-size: 60px !important;
+    line-height: 80px !important
+}
+
+.top-buttons div span{
+    font-size: 40px;
+}
+
+#timer, #screen-size{
+    cursor: pointer;
+}
+
+#top-last-right{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.page-theme i{
+    font-size: 40px !important;
+    margin: 0 10px
+}
+
+
+.page-theme #dark:hover{cursor: pointer}
+.page-theme #light:hover{cursor: pointer}
+
